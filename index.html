@@ -1,0 +1,70 @@
+<html xmlns:fb="http://ogp.me/ns/fb#">
+
+<head> 
+<title>Leggi online il giornalino</title>
+<script type="text/javascript" src="jquery-1.7.1.js"></script>
+<script src="jquery.colorbox.js"></script>
+<script type="text/javascript" src="jquery.json.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<link rel="stylesheet" href="colorbox.css" />
+
+<style>
+    tr {display:none}
+	img {display:none}
+	body{background-color: black}
+	a:link, a:visited{color:white;}
+	center {color:white;}
+    </style>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1&appId=373876842629916";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<table width="100%">
+	<tr id = "loading">
+		<th></th>
+		<th></th>
+	</tr>
+	<tr id = "b">
+		<th id = "pari" width="50%"></th>
+		<th id = "dispari" width="50%"></th>
+	</tr>
+</table>
+<center>Per zoomare sulle pagine cliccare sulle pagine e si aprira la schermata dello zoom</center>
+<table width="100%">
+	<tr id = "c">
+		<td><center id = "pages"></Center></td>
+	</tr>
+	<tr id = "a">
+		<td><center id = "u"><a class='commenti' href="#inline_content">Visualizza di commenti</a>  </Center></td>
+	</tr>
+</table>
+<div style='display:none'>
+	<div id='inline_content' style='padding:10px; background:#fff;'>
+		<div class="fb-comments" data-href="http://dl.dropbox.com/u/39017334/giornalino/index.html" data-num-posts="2" data-width="470" ></div>
+	</div>
+	<div id='inline_about' style='padding:10px; background:#fff;'>
+		<h1>Pigreko Sfogliabile Online</h1>
+		
+		Prodotto sviluppato da Matteo Filippi utilizzando le librerie jQuery e Google Docs
+		<br /><br /><br />
+		<center><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/it/">
+			<img alt="Licenza Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/it/88x31.png" id = "cc"/>
+		</a></center>
+		<br />
+		Questo opera è distribuito con <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/it/" style="color:black;">licenza Creative Commons Attribuzione - Non commerciale - Non opere derivate 3.0 Italia</a>.
+		
+	</div>
+</div>
+<div style='display:none'>
+	
+</div>
+</body>
+
+</html>
